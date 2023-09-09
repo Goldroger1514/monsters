@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.monsters-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: auto;
+    width: 85vw;
+}
+
+.monsters-list div {
+    flex-basis: calc(90% / 4);
+    background-color: #95dada;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: .25s ease-out;
+}
+
+.monsters-list div:hover {
+    transform: scale(1.05)
+}

@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(to left,
+            rgba(7, 27, 82, 1) 0%,
+            rgba(0, 128, 128, 1) 100%);
+    text-align: center
+}
+
+.app-title {
+    margin-top: 75px;
+    margin-bottom: 50px;
+    font-size: 76px;
+    color: #0ccac4;
+    font-family: 'Bigelow Rules';
+}
+
+/* 
+No matter where you import this css file , 
+as long as it's a general css file 
+react will build it all into one big css file so that no matter what , that css is always present in your application
+*/
