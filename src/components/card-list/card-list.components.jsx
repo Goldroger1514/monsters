@@ -10,8 +10,8 @@ class CardList extends Component {
                     filtered.map(monster => {
                         let { id, name, email } = monster;
                         return (
-                            // <CardInfo id={id} name={name} email={email} />
-                            <CardInfo monster={monster} />
+                            <CardInfo key={id} id={id} name={name} email={email} />
+                            // <CardInfo monster={monster} />
                         )
                     })
                 }
